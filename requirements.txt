@@ -1,0 +1,80 @@
+# Deep Learning
+torch==2.1.0
+torchvision==0.16.0
+timm==0.9.12
+
+# Data Processing
+numpy==1.24.3
+pandas==2.0.3
+opencv-python==4.8.1.78
+Pillow==10.1.0
+scikit-learn==1.3.2
+
+# Visualization
+matplotlib==3.8.2
+seaborn==0.13.0
+
+# API
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+pydantic==2.5.0
+
+# Frontend
+streamlit==1.28.2
+
+# Experiment Tracking
+mlflow==2.8.1
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+httpx==0.25.2
+
+# Utilities
+python-dotenv==1.0.0
+tqdm==4.66.1
+```
+
+### 4.3 Create .gitignore
+Open `.gitignore` and **add these lines** at the end:
+```
+# Data
+data/
+datasets/
+*.csv
+*.zip
+
+# Models
+models/*.pth
+models/*.pt
+models/*.onnx
+*.h5
+*.pkl
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Environment
+.env
+.venv
+venv/
+
+# Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
