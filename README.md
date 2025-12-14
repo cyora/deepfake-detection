@@ -50,15 +50,41 @@ pip install -r requirements.txt
 
 ## 📊 Development Status
 
-- [x] Repository setup
-- [ ] Data exploration (Kaggle)
-- [ ] Model training
-- [ ] Model evaluation
+- [x] Repository setup ✅
+- [x] Data exploration (Kaggle) ✅
+- [x] Model training (EfficientNet-B0) ✅
+- [x] Model saved to Kaggle Dataset ✅
+- [ ] Model evaluation on test set (NEXT STEP 🎯)
 - [ ] API development
 - [ ] Frontend development
 - [ ] Testing
 - [ ] Docker deployment
 - [ ] Documentation
+
+
+## 🎯 Training Results
+
+### Model Performance
+- **Architecture**: EfficientNet-B0 with transfer learning
+- **Training Status**: ✅ Complete  
+- **Training Duration**: ~25 minutes on Kaggle GPU (Tesla T4)
+- **Dataset**: 7,000 images (3,500 real + 3,500 fake)
+- **Model Size**: ~21 MB
+
+### Saved Artifacts
+- ✅ **Training notebook**: `notebooks/deepfake-detection-training.ipynb`
+- ✅ **Trained model**: `models/best_model.pth` (local only)
+- ✅ **Training history**: `models/training_history.json`
+- ✅ **Kaggle Model Dataset**: [Link](https://www.kaggle.com/datasets/cyrinegraf/deepfake-efficientnet-trained-model)
+
+### Training Configuration
+- **Epochs**: 10
+- **Batch Size**: 32
+- **Optimizer**: Adam (lr=0.001)
+- **Data Augmentation**: Random flip, rotation, color jitter
+- **Train/Val/Test Split**: 70% / 15% / 15%
+
+
 
 ## 🛠️ Technologies
 
